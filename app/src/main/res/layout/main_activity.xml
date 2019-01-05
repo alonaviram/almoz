@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:background="@drawable/full_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/layout1"
+                  android:layout_alignParentTop="false"
+                  android:gravity="center" android:layout_above="@+id/layout2" android:padding="@dimen/layout_padding">
+
+        <Button android:id="@+id/btn1"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="חנית"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btn4"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.475"
+                app:layout_constraintVertical_bias="0.885"/>
+
+        <Button android:id="@+id/btn2"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="זוזים"
+                app:layout_constraintEnd_toStartOf="@+id/btn3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.819"
+                app:layout_constraintBottom_toTopOf="@+id/btn5" android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"/>
+
+        <Button android:id="@+id/btn3"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="טרופים"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/layout2"
+                  android:gravity="center" android:layout_above="@+id/layout3" android:padding="@dimen/layout_padding">
+
+        <Button android:id="@+id/btn4"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="מספר"
+                app:layout_constraintEnd_toStartOf="@+id/btn5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btn7"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.475"
+                app:layout_constraintVertical_bias="0.888"/>
+
+        <Button android:id="@+id/btn5"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="אוסול"
+                app:layout_constraintEnd_toStartOf="@+id/btn6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.819"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@+id/btn8"
+                app:layout_constraintVertical_bias="0.023" android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"/>
+
+        <Button android:id="@+id/btn6"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="פששש"
+                app:layout_constraintBottom_toTopOf="@+id/btn9"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
+                app:layout_constraintVertical_bias="0.89"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/layout3"
+                  android:layout_alignParentBottom="true"
+                  android:gravity="center" android:padding="@dimen/layout_padding">
+
+        <Button android:id="@+id/btn7"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="וואלה 3"
+                app:layout_constraintEnd_toStartOf="@+id/btn8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.475" app:layout_constraintVertical_bias="0.928"/>
+
+        <Button android:id="@+id/btn8"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="וואלה 2"
+                app:layout_constraintEnd_toStartOf="@+id/btn9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.819" app:layout_constraintVertical_bias="0.928"
+                android:layout_marginLeft="50dp" android:layout_marginRight="50dp"/>
+
+        <Button android:id="@+id/btn9"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:text="וואלה 1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93" app:layout_constraintVertical_bias="0.928"/>
+
+    </LinearLayout>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp" app:srcCompat="@drawable/profile"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="false" android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
